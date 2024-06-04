@@ -1,0 +1,139 @@
+
+  
+    /* Global styles */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+
+    }   
+
+    .background-container{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('../image/bgpic.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        filter: blur(5px); /* Add blur effect to the background image */
+        z-index: -1; /* Ensure the background image stays behind other content */
+    }
+
+    .page-title {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+    /* Search form styles */
+    .search-form {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .search-input {
+        width: 200px;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        outline: none;
+        color: #000;
+    }
+
+    .search-button {
+        padding: 8px 16px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .search-button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Button container styles */
+    .button-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .action-button {
+        padding: 8px 16px;
+        margin-right: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .action-button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Table styles */
+    .user-table {
+        width: 100%;
+        margin-top: 20px;
+        background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+    }
+    
+    .user-table th,
+    .user-table td {
+        padding: 12px; /* Adjust padding for better spacing */
+        border: 1px solid #ddd; /* Add border for consistency */
+        text-align: left;
+        background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+    }
+    
+    .user-table th {
+        background-color: #f2f2f2;
+    }
+    
+    .user-table tbody tr:hover {
+        background-color: #3278fa; /* Adjust hover color */
+    }
+    
+   /* Styling for select dropdown */
+   select {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* Remove default appearance for Safari */
+    -moz-appearance: none; /* Remove default appearance for Firefox */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px"><path d="M7 10l5 5 5-5H7z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Custom arrow icon */
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+}
+
+/* Styling for select dropdown when clicked */
+select:focus {
+    outline: none;
+    border-color: #4CAF50; /* Change border color when focused */
+}
+
+/* Styling for options in the dropdown */
+select option {
+    color: #333; /* Text color */
+    background-color: #fff; /* Background color */
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    appearance: none; /* Remove default appearance */
+    -webkit-appearance: none; /* Remove default appearance for Safari */
+    -moz-appearance: none;
+}
